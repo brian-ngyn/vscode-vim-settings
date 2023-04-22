@@ -1,6 +1,6 @@
 [
   {
-    "key": "alt+j", // rebind 
+    "key": "alt+j", // rebind
     "command": "editor.action.moveLinesDownAction",
     "args": {
       "after": ["J"]
@@ -14,7 +14,7 @@
     }
   },
   {
-    "key": "v", // split file 
+    "key": "v", // split file
     "command": "explorer.openToSide",
     "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
   },
@@ -56,4 +56,24 @@
     "key": "ctrl+shift+h", // navigate between buffers
     "command": "workbench.action.previousEditor"
   },
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "down",
+    "command": "-selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "up",
+    "command": "-selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  }
 ]

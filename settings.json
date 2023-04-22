@@ -72,7 +72,7 @@
       "before": ["shift+tab"], // out tab line
       "commands": ["editor.action.outdentLines"],
       "when": "editorTextFocus && !editorReadonly"
-    },
+    }
   ],
   "vim.handleKeys": {
     "<C-a>": false,
@@ -134,5 +134,6 @@
   "editor.inlineSuggest.enabled": true,
   "editor.scrollBeyondLastLine": false,
   "editor.padding.bottom": 200,
-  "editor.cursorSurroundingLines": 12
+  "editor.cursorSurroundingLines": 12,
+  "editor.renderLineHighlight": "all"
 }
