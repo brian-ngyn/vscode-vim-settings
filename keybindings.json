@@ -1,0 +1,59 @@
+[
+  {
+    "key": "alt+j", // rebind 
+    "command": "editor.action.moveLinesDownAction",
+    "args": {
+      "after": ["J"]
+    }
+  },
+  {
+    "key": "alt+k", // rebind
+    "command": "editor.action.moveLinesUpAction",
+    "args": {
+      "after": ["J"]
+    }
+  },
+  {
+    "key": "v", // split file 
+    "command": "explorer.openToSide",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "ctrl+l", // navigate between buffers
+    "command": "workbench.action.navigateRight",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "cmd+backspace",
+    "command": "-deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+l", // navigate between buffers
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+h", // navigate between buffers
+    "command": "workbench.action.previousEditor"
+  },
+]

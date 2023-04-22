@@ -1,0 +1,138 @@
+{
+  // Start of vim settings
+  "vim.leader": "<space>",
+  "vim.surround": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-h>"], // navigate between buffers
+      "commands": ["workbench.action.navigateLeft"],
+      "silent": true
+    },
+    {
+      "before": ["<C-k>"], // navigate between buffers
+      "commands": ["workbench.action.navigateRight"],
+      "silent": true
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Leader>", "h"], // highlight off
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "/"], // comment line
+      "after": ["g", "c", "c"]
+    },
+    {
+      "before": ["<leader>", "l", "f"], // format document
+      "commands": ["editor.action.formatDocument"],
+      "silent": true
+    },
+    {
+      "before": ["g", "l"], // hover error
+      "commands": ["editor.action.showHover"],
+      "silent": true
+    },
+    {
+      "before": ["<C-h>"], // navigate between buffers
+      "commands": ["workbench.action.navigateLeft"],
+      "when": "explorerViewletVisible && filesExplorerFocus",
+      "silent": true
+    },
+    {
+      "before": ["<C-l>"], // navigate between buffers
+      "commands": ["workbench.action.navigateRight"],
+      "when": "explorerViewletVisible && filesExplorerFocus",
+      "silent": true
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "/"], // comment line
+      "after": ["g", "c"]
+    },
+    {
+      "before": ["<M-j>"], // move lines
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"], // move lines
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["tab"], // tab line
+      "commands": ["editor.action.indentLines"],
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": ["shift+tab"], // out tab line
+      "commands": ["editor.action.outdentLines"],
+      "when": "editorTextFocus && !editorReadonly"
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // End of vim settings
+
+  "editor.accessibilitySupport": "off",
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.smoothScrolling": true,
+  "explorer.sortOrder": "type",
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 13,
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#839496",
+    "terminal.ansiBlack": "#073642",
+    "terminal.ansiBlue": "#268bd2",
+    "terminal.ansiBrightBlack": "#002b36",
+    "terminal.ansiBrightBlue": "#839496",
+    "terminal.ansiBrightCyan": "#93a1a1",
+    "terminal.ansiBrightGreen": "#586e75",
+    "terminal.ansiBrightMagenta": "#6c71c4",
+    "terminal.ansiBrightRed": "#dc322f",
+    "terminal.ansiBrightWhite": "#fdf6e3",
+    "terminal.ansiBrightYellow": "#657b83",
+    "terminal.ansiCyan": "#2aa198",
+    "terminal.ansiGreen": "#859900",
+    "terminal.ansiMagenta": "#d33682",
+    "terminal.ansiRed": "#dc322f",
+    "terminal.ansiWhite": "#eee8d5",
+    "terminal.ansiYellow": "#e8b105",
+    "terminal.selectionBackground": "#073642",
+    "terminalCursor.foreground": "#839496"
+  },
+  "terminal.integrated.cursorBlinking": true,
+  "editor.cursorStyle": "line",
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "afterDelay",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.padding.bottom": 200,
+  "editor.cursorSurroundingLines": 12
+}
