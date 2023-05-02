@@ -2,6 +2,7 @@
   // Start of vim settings
   "vim.leader": "<space>",
   "vim.surround": true,
+  "vim.camelCaseMotion.enable": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
@@ -30,7 +31,6 @@
     {
       "before": ["<leader>", "l", "f"], // format document
       "commands": ["editor.action.formatDocument"],
-      "silent": true
     },
     {
       "before": ["g", "l"], // hover error
@@ -85,6 +85,7 @@
   "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontSize": 12.2,
   "editor.fontLigatures": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -135,5 +136,10 @@
   "editor.scrollBeyondLastLine": false,
   "editor.padding.bottom": 200,
   "editor.cursorSurroundingLines": 12,
-  "editor.renderLineHighlight": "all"
+  "editor.renderLineHighlight": "all",
+  "vscode-pets.theme": "beach",
+  "vscode-pets.petSize": "small",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  }
 }
