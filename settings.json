@@ -30,7 +30,7 @@
     },
     {
       "before": ["<leader>", "l", "f"], // format document
-      "commands": ["editor.action.formatDocument"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
       "before": ["g", "l"], // hover error
@@ -80,6 +80,7 @@
   },
   // End of vim settings
 
+  "prettier.requireConfig": true,
   "editor.accessibilitySupport": "off",
   "git.openRepositoryInParentFolders": "never",
   "workbench.colorTheme": "GitHub Dark",
@@ -88,7 +89,7 @@
   "editor.fontSize": 12.2,
   "editor.fontLigatures": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -137,9 +138,20 @@
   "editor.padding.bottom": 200,
   "editor.cursorSurroundingLines": 12,
   "editor.renderLineHighlight": "all",
-  "vscode-pets.theme": "beach",
-  "vscode-pets.petSize": "small",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
-  }
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
 }
