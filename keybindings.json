@@ -73,7 +73,7 @@
   },
   {
     "key": "up",
-    "command": "-selectPrevSuggestion",
+    "command": "-selectprevsuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   }
 ]
