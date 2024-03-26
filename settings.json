@@ -48,6 +48,12 @@
       "commands": ["workbench.action.navigateRight"],
       "when": "explorerViewletVisible && filesExplorerFocus",
       "silent": true
+    },
+    {
+      "before": ["<leader>", "r", "n"], // rename variable
+      "commands": ["editor.action.rename"],
+      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly",
+      "silent": true
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -139,8 +145,6 @@
   "editor.renderLineHighlight": "all",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "git.enableSmartCommit": true,
-  "editor.largeFileOptimizations": true,
-  "security.promptForLocalFileProtocolHandling": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
