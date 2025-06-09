@@ -3,14 +3,18 @@
     "key": "alt+j", // rebind
     "command": "editor.action.moveLinesDownAction",
     "args": {
-      "after": ["J"]
+      "after": [
+        "J"
+      ]
     }
   },
   {
     "key": "alt+k", // rebind
     "command": "editor.action.moveLinesUpAction",
     "args": {
-      "after": ["J"]
+      "after": [
+        "J"
+      ]
     }
   },
   {
